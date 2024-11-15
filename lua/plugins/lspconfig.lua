@@ -7,6 +7,7 @@ return {
 			"emmet_language_server",
             --"lua_ls",
             --"gopls",
+            --"jdtls",
 			"hls",
 			"html",
 			"eslint",
@@ -15,7 +16,6 @@ return {
 			"rust_analyzer",
 			"jsonls",
 			"fortls",
-			"jdtls",
 		}
 
         local on_attach = function(client, bufnr)

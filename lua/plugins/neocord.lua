@@ -1,4 +1,4 @@
 return { 
     'IogaMaster/neocord',
-    event = "VeryLazy",
+    event = "VeryLazy"
 }

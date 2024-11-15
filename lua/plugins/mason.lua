@@ -1,15 +1,12 @@
 return {
 	'williamboman/mason.nvim',
-	config = function()
-		local mason = require "mason"
-		mason.setup{
+    opts = {
 		    ui = {
-			icons = {
-			    package_installed = "✓",
-			    package_pending = "➜",
-			    package_uninstalled = "✗"
-			}
+                icons = {
+                    package_installed = "✓",
+                    package_pending = "➜",
+                    package_uninstalled = "✗"
+                }
 		    },
-		}
-	end,
+	}
 }

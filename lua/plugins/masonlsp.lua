@@ -3,7 +3,6 @@ return {
 	config = function()
 		local mason_lsp = require "mason-lspconfig"
 		mason_lsp.setup{
-			automatic_instalation = true,
 			ensure_installed = {
 				"ruff",
 				"pyright",
