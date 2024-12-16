@@ -1,7 +1,7 @@
 return {
-    'IogaMaster/neocord',
+    "IogaMaster/neocord",
     event = "VeryLazy",
-    config = function ()
+    config = function()
         require("neocord").setup()
     end,
 }

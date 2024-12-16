@@ -10,6 +10,8 @@ return {
             "lua_ls",
             --"gopls",
             --"jdtls",
+            "kotlin_language_server",
+            "metals",
             "hls",
             "html",
             "eslint",
@@ -55,7 +57,7 @@ return {
                 },
                 python = {
                     analysis = {
-                        ignore = { '*' }, -- Using Ruff
+                        ignore = { '*' },        -- Using Ruff
                         typeCheckingMode = 'off' --Using mypy
                     },
                 },
