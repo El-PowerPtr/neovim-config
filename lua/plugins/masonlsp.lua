@@ -5,7 +5,7 @@ return {
         mason_lsp.setup {
             ensure_installed = {
                 "ruff",
-                "pyright",
+                "basedpyright",
                 "lua_ls",
                 "emmet_language_server",
                 --"jdtls",
@@ -18,6 +18,7 @@ return {
                 "rust_analyzer",
                 "jsonls",
                 "fortls",
+                "elixirls",
             },
         }
     end

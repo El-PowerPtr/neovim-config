@@ -5,11 +5,12 @@ return {
         local lspconfig = require "lspconfig"
         local servers = {
             "ruff",
-            "pyright",
+            "basedpyright",
             "emmet_language_server",
             "lua_ls",
             --"gopls",
             --"jdtls",
+            "elixirls",
             "kotlin_language_server",
             "metals",
             "hls",
@@ -36,7 +37,7 @@ return {
             buf_set_keymap('n', '[d', '<cmd>lua vim.diagnostic.goto_prev()<CR>', opts)
             buf_set_keymap('n', ']d', '<cmd>lua vim.diagnostic.goto_next()<CR>', opts)
             buf_set_keymap('n', '<leader>vn', '<cmd>lua vim.lsp.buf.rename()<cr>', opts)
-            buf_set_keymap('n', '<C-a>', '<cmd>lua vim.lsp.buf.code_action()<CR>', opts)
+            buf_set_keymap('n', '<A-a>', '<cmd>lua vim.lsp.buf.code_action()<CR>', opts)
 
             client.server_capabilities.document_formatting = true
         end
@@ -50,15 +51,15 @@ return {
             }
         end
 
-        lspconfig.pyright.setup {
+        lspconfig.basedpyright.setup {
             settings = {
-                pyright = {
+                basedpyright = {
                     disableOrganizeImports = true, -- Using Ruff
                 },
                 python = {
                     analysis = {
-                        ignore = { '*' },        -- Using Ruff
-                        typeCheckingMode = 'off' --Using mypy
+                        ignore = { '*' }, -- Using Ruff
+                        typeCheckingMode = 'on',
                     },
                 },
             },

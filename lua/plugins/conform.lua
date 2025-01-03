@@ -6,6 +6,10 @@ return {
             lua = { "stylua" },
             python = { "ruff" },
             go = { "gofumpt" },
+            typescript = { "prettier" },
+            javascript = { "prettier" },
+            jsx = { "prettier" },
+            tsx = { "prettier" },
 
             format_on_save = {
                 -- These options will be passed to conform.format()

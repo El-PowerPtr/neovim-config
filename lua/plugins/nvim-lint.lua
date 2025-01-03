@@ -3,7 +3,12 @@ return {
     config = function()
         local nvimlint = require 'lint'
         nvimlint.linters_by_ft = {
-            python = { 'mypy' },
+            haskell = { 'hlint' },
         }
+        vim.api.nvim_create_autocmd({ 'InsertLeave' }, {
+            callback = function()
+                nvimlint.try_lint()
+            end
+        })
     end
 }
