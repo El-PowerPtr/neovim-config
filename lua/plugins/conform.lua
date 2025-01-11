@@ -10,6 +10,7 @@ return {
             javascript = { "prettier" },
             jsx = { "prettier" },
             tsx = { "prettier" },
+            haskell = { "ormulu" },
 
             format_on_save = {
                 -- These options will be passed to conform.format()
