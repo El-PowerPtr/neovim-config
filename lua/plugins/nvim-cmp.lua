@@ -66,7 +66,6 @@ return {
                 { name = 'buffer' },
                 { name = 'emoji' },
                 { name = 'path' },
-                { name = 'emoji' },
                 { name = 'greek' },
                 { name = 'sql' },
                 { name = 'async_clj_omni' },

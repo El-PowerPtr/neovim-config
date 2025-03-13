@@ -130,7 +130,7 @@ local config = {
         buf_set_keymap('n', '[d', '<cmd>lua vim.diagnostic.goto_prev()<CR>', opts)
         buf_set_keymap('n', ']d', '<cmd>lua vim.diagnostic.goto_next()<CR>', opts)
         buf_set_keymap('n', '<leader>vn', '<cmd>lua vim.lsp.buf.rename()<cr>', opts)
-        buf_set_keymap('n', '<leader<C-a>', '<cmd>lua vim.lsp.buf.code_action()<CR>', opts)
+        buf_set_keymap('n', '<leader>1', '<cmd>lua vim.lsp.buf.code_action()<CR>', opts)
 
         client.server_capabilities.document_formatting = true
 

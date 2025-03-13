@@ -11,6 +11,7 @@ return {
             jsx = { "prettier" },
             tsx = { "prettier" },
             haskell = { "ormulu" },
+            fortran = { "fprettify", "findent" },
 
             format_on_save = {
                 -- These options will be passed to conform.format()

@@ -8,10 +8,12 @@ return {
             "basedpyright",
             "emmet_language_server",
             "lua_ls",
+            "gradle_ls",
             --"gopls",
             --"jdtls",
             "elixirls",
             "kotlin_language_server",
+            "ts_ls",
             "metals",
             "hls",
             "html",
@@ -21,6 +23,7 @@ return {
             "rust_analyzer",
             "jsonls",
             "fortls",
+            "clojure_lsp",
         }
 
         local on_attach = function(client, bufnr)
