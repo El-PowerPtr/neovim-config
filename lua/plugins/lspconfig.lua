@@ -5,8 +5,9 @@ return {
         local lspconfig = require "lspconfig"
         local servers = {
             "ruff",
-            "basedpyright",
             "emmet_language_server",
+            "jedi_language_server",
+            "r_language_server",
             "lua_ls",
             "gradle_ls",
             --"gopls",
@@ -69,7 +70,7 @@ return {
 
         lspconfig.basedpyright.setup {
             settings = {
-                basedpyright = {
+                jedi = {
                     disableOrganizeImports = true, -- Using Ruff
                 },
                 python = {
